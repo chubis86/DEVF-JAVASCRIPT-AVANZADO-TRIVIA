@@ -33,12 +33,22 @@ async function llamarApi(cadena){
 }
 
 function imprimirPreguntas(arreglo){
-    let arreglo = arreglo;
-    arreglo.map(pregunta => {
-        retue 
-        if(pregunta.type=='multiple'){
-
-         }
+    let preguntas = arreglo;
+    let contador=0;
+    const cadena=preguntas.map(pregunta => {
+        let respuestas=pregunta.correct_answer.concat(pregunta.incorrect_answers);
+        /* respuestas=respuestas.flat(); */
+        console.log(respuestas);
+        return 
+        `<div class='preguntaContenedor' data='${contador}'>
+            <div class='pregunta'>
+                ${pregunta.question}
+            </div>
+            <div class='respuestas'>
+                
+            </div>    
+        </div>`; 
+        
     });
 }
 

@@ -78,13 +78,22 @@ main .container .titulo{
 .preguntaContenedor .pregunta{
     font-weight: bold;
     width: 100%;
+    padding:20px;
 }
 
 .preguntaContenedor .respuestas{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
+}
+
+.preguntaContenedor .respuestas .respuesta{
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color:black;
 }
 
 footer{

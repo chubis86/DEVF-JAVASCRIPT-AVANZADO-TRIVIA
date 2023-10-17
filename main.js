@@ -124,9 +124,11 @@ function colorearPregunta(elemento, cadena){
 }
 
 function calificar(){
-    console.log(calificacion + " " + numeroPreguntas);
-    console.log("-----");
+    
     if(numeroPreguntas==10){
-        alert("Su calificación es de "+calificacion+"/"+numeroPreguntas);
+        alert("Su calificación es de "+calificacion+"/"+numeroPreguntas);  
+        const calificacionAviso = document.querySelector('#calificacionAviso');
+        calificacionAviso.innerHTML="Su calificación es de "+calificacion+"/"+numeroPreguntas;
+        calificacionAviso.style.display="";
     }
 }

@@ -30,11 +30,10 @@ nav li{
 main{
     width: 100%;
     padding:20px;
-    margin-bottom:50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    margin-bottom: 30px;
 }
 
 main .container{
@@ -42,6 +41,7 @@ main .container{
     text-align: center;
     padding: 20px;
     padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 main .container .titulo{
@@ -54,6 +54,14 @@ main .container .titulo{
 
 .form{
     width: 100%;
+}
+
+#calificacionAviso{
+    width: 80%;
+    text-align:center;
+    display:hidden;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 #trivia{

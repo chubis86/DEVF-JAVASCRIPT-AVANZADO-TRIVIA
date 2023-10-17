@@ -1,6 +1,7 @@
 body{
     margin:0px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
 }
 
 nav{
@@ -28,14 +29,19 @@ nav li{
 
 main{
     width: 100%;
-    display: flex;
-    justify-content: center;
     padding:20px;
+    margin-bottom:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 main .container{
-    width: 80%;
+    width: 100%;
     text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
 }
 
 main .container .titulo{
@@ -48,6 +54,37 @@ main .container .titulo{
 
 .form{
     width: 100%;
+}
+
+#trivia{
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align:center;
+    
+}
+
+.preguntaContenedor{
+    width: 100%;
+    background-color:#DBE7EA;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.preguntaContenedor .pregunta{
+    font-weight: bold;
+    width: 100%;
+}
+
+.preguntaContenedor .respuestas{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 footer{

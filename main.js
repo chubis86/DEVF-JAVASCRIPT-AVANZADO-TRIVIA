@@ -3,10 +3,15 @@ const dificultad = document.querySelector('#dificultad');
 const respuesta = document.querySelector('#respuesta');
 const categoria = document.querySelector('#categoria');
 const trivia= document.querySelector('#trivia');
+const calificacionAviso = document.querySelector('#calificacionAviso');
 let numeroPreguntas=0;
 let calificacion=0;
 
 botonGenerar.addEventListener('click', e => {
+    //Eliminar calificación si es que existe alguna previa
+    calificacionAviso.innerHTML='';
+    calificacionAviso.style.display="none";
+
     let api='https://opentdb.com/api.php?amount=10';
     
     
@@ -127,7 +132,6 @@ function calificar(){
     
     if(numeroPreguntas==10){
         alert("Su calificación es de "+calificacion+"/"+numeroPreguntas);  
-        const calificacionAviso = document.querySelector('#calificacionAviso');
         calificacionAviso.innerHTML="Su calificación es de "+calificacion+"/"+numeroPreguntas;
         calificacionAviso.style.display="";
     }
